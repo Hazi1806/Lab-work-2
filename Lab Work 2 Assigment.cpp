@@ -1,23 +1,24 @@
+//Preprocessor directives
 #include <iostream>
 using namespace std;
 
-// Function to Celsius to Fahrenheit
+//Function to Celsius to Fahrenheit
 double celsiusToFahrenheit(double celsius) {
     return (celsius * 9/5) + 32;
 }
 
-// Function to convert Fahrenheit to Celsius
+//Function to convert Fahrenheit to Celsius
 double fahrenheitToCelsius(double fahrenheit) {
     return (fahrenheit - 32) * 5/9;
 }
 
-//declaration for covertedtemp
+//Declaration for covertedtemp
 double convertedTemp;
 
 int main ()
 {
-    double temperature;
-    char scale;
+    double temperature; //Declaration
+    char scale; //Declaration
 
     cout << " Enter Temperature: ";
     cin >> temperature;
@@ -34,7 +35,7 @@ int main ()
         cout << "Converted temperature: " << convertedTemp << "C" << endl;
     }
     else {
-        cout << "You entered Invalid scale" << endl;
+        cout << "You entered Invalid scale" << endl; //The user got warning if they put the wrong input
     }
 
     return 0;
